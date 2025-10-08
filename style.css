@@ -140,7 +140,40 @@ section h2 {font-size: 1.8rem; margin-bottom: 40px; text-align: center;}
 .team-member img {width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent); margin-bottom: 12px; transition: transform 0.3s;}
 .team-member img:hover {transform: scale(1.05);}
 .team-member h4 {font-size: 1.1rem; font-weight: 700; margin-top: 8px; color: #fff;}
-.view-more-btn {display: block; text-align: center; margin: 30px auto 0; padding: 12px 28px; background: linear-gradient(90deg,var(--accent),var(--accent-2)); border: none; border-radius: 8px; color: #fff; font-weight: 700; cursor: pointer; transition: transform 0.3s;}
+.view-more-btn {
+  display: inline-block;           /* instead of block */
+  text-align: center;
+  margin: 30px auto 0;
+  padding: 10px 20px;             /* control length here */
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;          /* remove underline */
+  transition: transform 0.3s;
+}
+.button-container {
+  text-align: center;  /* centers inline-block elements */
+}
+
+.view-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.view-more-btn {
+  width: 140px;  /* fixed length */
+  text-align: center;
+}
+
 .view-more-btn:hover {transform: scale(1.05);}
 
 .about-section {background-color: var(--bg-alt); padding: 80px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100vw; margin-left: calc(-50vw + 50%);}
